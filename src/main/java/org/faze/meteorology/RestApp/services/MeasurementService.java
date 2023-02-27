@@ -56,4 +56,8 @@ public class MeasurementService {
     } else throw new MeasurementNotFoundException();
 
   }
+
+  public Long countRainyDays() {
+    return measurementRepository.countRainyDays();
+  }
 }
